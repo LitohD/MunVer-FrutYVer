@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*!RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+
+}
+/*? HEADER*/
+
+header{
+    background-color: rgb(6, 144, 6);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    color: rgb(94, 24, 24);
+    font-size: 40px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    padding: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/*?MAIN*/
+
+/** HERO */
+
+.hero{
+    width: 100%;
+    /* height: calc(100vh - 79px); */
+    background-color: white;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlace-promocion a{
+    color: red;
+    font-size: 40px;
+    align-items: center;
+    text-decoration: none;
+    background-color: black;
+}
+
+.hero h2{
+    color: blueviolet;
+}
+
+.hero div div{
+    width: 250px;
+    height: 350px;
+    border: 2px solid;
+    margin: 10px;
+}
+
+
+
+.hero div div img{
+    width: 100%;
+}
+
+/**PRESENTACION*/
+
+.presentacion{
+    width: 100%;
+    text-align: center;
+    background-image: url(../img/imagen-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.presentacion h2{
+    font-family: cursive;
+    color: #dadf14;
+    font-size: 60px;
+}
+
+.presentacion p{
+    font-family: cursive;
+    color: beige;
+    font-size: 24px;
+}
+
+/**OPINIONES*/
+
+.chat{
+    position: fixed;
+    bottom: 75px;
+    right: 75px;
+}
+
+/*?FOOTER*/
+
+footer{
+    display: flex;
+    background-color: rgb(173, 173, 173);
+}
