@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/*!RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Montserrat", sans-serif !important; }
+
+header nav div div a img {
+  width: 70px;
+  margin: 5px; }
+
+header nav div div img {
+  width: 55px;
+  margin: 10px; }
+
+.menu-bg {
+  background-color: #7fa072; }
+
+.chat {
+  position: fixed;
+  bottom: 50px;
+  right: 50px; }
+
+.hero a {
+  display: flex;
+  color: red;
+  font-size: 30px;
+  justify-content: center;
+  text-decoration: none;
+  background-color: black; }
+
+.hero h1 {
+  font-size: 50px;
+  color: #850909;
+  padding: 20px;
+  background-color: bisque;
+  text-align: center; }
+
+.hero h2 {
+  color: blueviolet;
+  text-align: center;
+  font-size: 30px;
+  margin: 20px; }
+
+.productos-contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  .productos-contenedor div {
+    width: 250px;
+    height: 380px;
+    border: 2px solid;
+    margin: 20px;
+    text-align: center; }
+    .productos-contenedor div input {
+      align-items: center;
+      margin: 10px; }
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  align-items: center;
+  background-image: url(../img/imagen-fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover; }
+  .presentacion h2 {
+    font-family: cursive;
+    color: #dadf14;
+    font-size: 60px; }
+  .presentacion p {
+    font-family: cursive;
+    color: beige;
+    font-size: 25px;
+    width: 70%; }
+
+.opiniones h2 {
+  text-align: center;
+  color: #6cc449;
+  padding: 20px;
+  background-color: #850909;
+  width: 100%; }
+
+.opiniones div {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .opiniones div div img {
+    width: 400px;
+    border: 2px solid; }
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  background-color: #adadad;
+  padding: 20px; }
+
+.grid-mapa {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center; }
+  .grid-mapa h3 {
+    width: 50%;
+    margin: 10px; }
+
+.grid-redes h3 {
+  align-items: center;
+  margin: 10px; }
+
+.grid-redes img {
+  padding: 10px; }
+
+.grid-correo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .grid-correo h3 {
+    width: 80%;
+    margin: 10px; }
+
+@media screen and (max-width: 1181px) {
+  .hero h1 {
+    font-size: 40px; } }
+
+@media screen and (max-width: 1161px) {
+  .hero a {
+    font-size: 30px; } }
+
+@media screen and (max-width: 1061px) {
+  .grid-footer div h3 {
+    font-size: 20px; } }
+
+@media screen and (max-width: 989px) {
+  .hero a {
+    font-size: 20px; }
+  .hero h1 {
+    font-size: 30px; }
+  .presentacion h2 {
+    font-size: 50px; }
+  .presentacion p {
+    font-size: 20px; } }
+
+@media screen and (max-width: 954px) {
+  footer {
+    padding: 10px; } }
+
+@media screen and (max-width: 934px) {
+  .grid-footer {
+    display: flex;
+    justify-content: space-around; }
+  .grid-mapa {
+    display: none; } }
+
+@media screen and (max-width: 870px) {
+  .hero a {
+    font-size: 20px; }
+  .presentacion {
+    display: none; } }
+
+@media screen and (max-width: 747px) {
+  .grid-redes img {
+    padding: 5px; } }
+
+@media screen and (max-width: 724px) {
+  .hero h1 {
+    font-size: 25px;
+    padding: 10px; }
+  .grid-redes img {
+    width: 50px; } }
+
+@media screen and (max-width: 695px) {
+  .opiniones div div {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center; }
+  footer {
+    flex-direction: column; } }
+
+@media screen and (max-width: 659px) {
+  .hero a {
+    font-size: 15px; } }
+
+@media screen and (max-width: 590px) {
+  .hero h1 {
+    font-size: 20px; } }
+
+@media screen and (max-width: 494px) {
+  .hero a {
+    font-size: 13px; }
+  .hero h1 {
+    font-size: 17px; }
+  .hero h2 {
+    font-size: 15px;
+    margin: 10px; } }
+
+@media screen and (max-width: 435px) {
+  .hero a {
+    font-size: 10px; }
+  .chat {
+    display: none; }
+  .opiniones div div img {
+    width: 300px;
+    padding: 10px;
+    justify-content: center; } }
+
+@media screen and (max-width: 419px) {
+  .hero h1 {
+    font-size: 15px; } }

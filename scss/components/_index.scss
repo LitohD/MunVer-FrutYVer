@@ -1,0 +1,95 @@
+.hero {
+    a {
+        display: flex;
+        color: red;
+        font-size: 30px;
+        justify-content: center;
+        text-decoration: none;
+        background-color: black;
+    }
+
+    h1 {
+        font-size: 50px;
+        color: rgb(133, 9, 9);
+        padding: 20px;
+        background-color: bisque;
+        text-align: center;
+    }
+
+    h2 {
+        color: blueviolet;
+        text-align: center;
+        font-size: 30px;
+        margin: 20px;
+    }
+}
+
+.productos-contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    div {
+        width: 250px;
+        height: 380px;
+        border: 2px solid;
+        margin: 20px;
+        text-align: center;
+
+        input {
+            align-items: center;
+            margin: 10px;
+        }
+    }
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    align-items: center;
+    background-image: url(../img/imagen-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+
+    h2 {
+        font-family: cursive;
+        color: #dadf14;
+        font-size: 60px;
+    }
+
+    p {
+        font-family: cursive;
+        color: beige;
+        font-size: 25px;
+        width: 70%;
+    }
+}
+
+.opiniones {
+    h2 {
+        text-align: center;
+        color: #6cc449;
+        padding: 20px;
+        background-color: rgb(133, 9, 9);
+        width: 100%;
+    }
+
+    div {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        div{
+            img{
+                width: 400px;
+                border: 2px solid;
+            }
+        }
+    }
+}
