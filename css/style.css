@@ -413,9 +413,10 @@ header nav div div a img{
 /*! -------EMPLEO-------*/
 
 .trabajo {
-    background-color: #91eca0;
+    background: rgb(145,236,160);
+    background: linear-gradient(70deg, rgba(145,236,160,1) 43%, rgba(134,21,21,0.592874649859944) 100%);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 80%;
     margin: auto;
 }
@@ -454,13 +455,11 @@ header nav div div a img{
     padding: 10px;
     border: 1px solid #d1d1d1;
     border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 1em;
     margin-bottom: 10px;
 }
 
 .trabajo input[type="checkbox"] {
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .trabajo input[type="submit"], input[type="reset"] {
@@ -470,10 +469,10 @@ header nav div div a img{
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
     width: 100%;
-    margin-top: 10px;
-    transition: background-color 1s;
+    margin: 5px;
+    transition-property: background-color;
+    transition-duration: 1s;
 }
 
 .trabajo input[type="submit"]:hover, input[type="reset"]:hover {

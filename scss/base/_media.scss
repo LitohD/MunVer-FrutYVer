@@ -1,38 +1,49 @@
 @media screen and (max-width:1181px) {
-    .hero h1{
-        font-size: 40px;
+    .hero {
+        h1{
+            font-size: 40px;
+        }
     }
 }
 
 @media screen and (max-width:1161px) {
-    .hero a{
+    .hero {
+        a{
         font-size: 30px;
+        }
     }
+
 }
 
 @media screen and (max-width:1061px) {
-    .grid-footer div h3{
-        font-size: 20px;
+    .grid-footer {
+        div{
+            h3{
+                font-size: 20px;
+            }
+        }
     }
 }
 
 @media screen and (max-width:989px) {
-    .hero a{
-        font-size: 20px;
-    }
-    .hero h1{
-        font-size: 30px;
-    }
+    .hero {
+        a{
+            font-size: 20px;
+        }
+        h1{
+            font-size: 30px;
+        }
     .presentacion h2{
         font-size: 50px;
-    }
+        }
     .presentacion p{
         font-size: 20px;
+        }
     }
 }
 
 @media screen and (max-width:954px) {
-    footer{
+    .grid-footer{
         padding: 10px;
     }
 }
@@ -48,86 +59,160 @@
 }
 
 @media screen and (max-width:870px) {
-    .hero a{
-        font-size: 20px;
+    .hero{
+        a{
+            font-size: 20px;
+        }
     }
-    .presentacion {
+    .presentacion{
         display: none;
     }
 }
 
 @media screen and (max-width:747px) {
-    .grid-redes img{
-        padding: 5px;
+    .grid-redes{
+        a{
+            img{
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:735px) {
+    .trabajo{
+        h1{
+            font-size: 30px;
+            margin: 10px;
+        }
+        p{
+            font-size: 15px;
+            margin: 10px;
+        }
+        h2{
+            font-size: 20px;
+            margin: 10px;
+        }
     }
 }
 
 @media screen and (max-width:724px) {
-    .hero h1{
+    .hero{
+        h1{
         font-size: 25px;
         padding: 10px;
+        }
     }
-    .grid-redes img{
-        width: 50px;
+    .grid-redes 
+        {a {
+            img{
+            width: 50px;
+            }
+        }
     }
 }
 
 @media screen and (max-width:695px) {
-    .opiniones div div{
-        display: flex;
-        padding: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
+    .opiniones{ 
+        div{
+            div{
+            display: flex;
+            padding: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            }
         }
-    footer {
-        flex-direction: column
     }
+    .grid-footer{
+        flex-direction: column
+        }
 }
 
 @media screen and (max-width:659px) {
-    .hero a{
-        font-size: 15px;
+    .hero{
+        a{
+            font-size: 15px;
+        }
     }
 }
 
 @media screen and (max-width:590px) {
-    .hero h1{
-        font-size: 20px;
+    .hero{
+        h1{
+            font-size: 20px;
+        }
+    }
+    .trabajo{
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 12px;
+        }
+        h2{
+            font-size: 15px;
+        }
+        form{
+            div{
+                label{
+                    font-size: 12px;
+                    margin: 5px;
+                }
+                input{
+                    height: 20px;
+                }
+            }
+            input{
+                font-size: 10px;
+                margin: 5px;
+                height: 30px;
+            }
+        }
     }
 }
 
 @media screen and (max-width:494px) {
-    .hero a{
+    .hero{
+        a{
         font-size: 13px;
-    }
-    .hero h1{
+        }
+        h1{
         font-size: 17px;
-    }
-    .hero h2{
+        }
+        h2{
         font-size: 15px;
         margin: 10px;
+        }
     }
 } 
 
 @media screen and (max-width:435px) {
-    .hero a{
-        font-size: 10px;
+    .hero {
+        a{
+            font-size: 10px;
+        }
     }
-    
     .chat {
         display: none;
     }
     
-    .opiniones div div img{
-        width: 300px;
-        padding: 10px;
-        justify-content: center;
+    .opiniones{
+        div{
+            div{
+                img{
+                    width: 300px;
+                    padding: 10px;
+                    justify-content: center;
+                }
+            }
         }
+    }
 }
 
 @media screen and (max-width:419px) {
-    .hero h1{
-        font-size: 15px;
+    .hero{
+        h1{
+            font-size: 15px;
+        }
     }
-    
 }

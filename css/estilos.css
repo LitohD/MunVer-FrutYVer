@@ -98,6 +98,59 @@ header nav div div img {
     width: 400px;
     border: 2px solid; }
 
+.trabajo {
+  background: #91eca0;
+  background: linear-gradient(70deg, #91eca0 43%, rgba(134, 21, 21, 0.592875) 100%);
+  padding: 20px;
+  border-radius: 20px;
+  width: 80%;
+  margin: auto; }
+  .trabajo h1 {
+    font-size: 40px;
+    margin: 20px;
+    color: #861515;
+    text-align: center; }
+  .trabajo p {
+    font-size: 20px;
+    margin: 20px;
+    text-align: center; }
+  .trabajo h2 {
+    font-size: 30px;
+    color: #861515;
+    text-align: center;
+    margin: 20px; }
+  .trabajo form div {
+    margin: 10px; }
+    .trabajo form div label {
+      font-weight: bold;
+      margin: 10px; }
+    .trabajo form div .bloques {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #d1d1d1;
+      border-radius: 5px;
+      margin: 5px; }
+    .trabajo form div .check {
+      margin-right: 10px; }
+    .trabajo form div textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #d1d1d1;
+      border-radius: 5px;
+      margin-bottom: 10px; }
+  .trabajo form .boton {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 5px;
+    transition-property: background-color;
+    transition-duration: 1s; }
+    .trabajo form .boton:hover {
+      background-color: #861515; }
+
 .grid-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -145,13 +198,13 @@ header nav div div img {
     font-size: 20px; }
   .hero h1 {
     font-size: 30px; }
-  .presentacion h2 {
+  .hero .presentacion h2 {
     font-size: 50px; }
-  .presentacion p {
+  .hero .presentacion p {
     font-size: 20px; } }
 
 @media screen and (max-width: 954px) {
-  footer {
+  .grid-footer {
     padding: 10px; } }
 
 @media screen and (max-width: 934px) {
@@ -168,14 +221,25 @@ header nav div div img {
     display: none; } }
 
 @media screen and (max-width: 747px) {
-  .grid-redes img {
+  .grid-redes a img {
     padding: 5px; } }
+
+@media screen and (max-width: 735px) {
+  .trabajo h1 {
+    font-size: 30px;
+    margin: 10px; }
+  .trabajo p {
+    font-size: 15px;
+    margin: 10px; }
+  .trabajo h2 {
+    font-size: 20px;
+    margin: 10px; } }
 
 @media screen and (max-width: 724px) {
   .hero h1 {
     font-size: 25px;
     padding: 10px; }
-  .grid-redes img {
+  .grid-redes a img {
     width: 50px; } }
 
 @media screen and (max-width: 695px) {
@@ -184,7 +248,7 @@ header nav div div img {
     padding: 10px;
     flex-wrap: wrap;
     justify-content: center; }
-  footer {
+  .grid-footer {
     flex-direction: column; } }
 
 @media screen and (max-width: 659px) {
@@ -193,7 +257,22 @@ header nav div div img {
 
 @media screen and (max-width: 590px) {
   .hero h1 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .trabajo h1 {
+    font-size: 20px; }
+  .trabajo p {
+    font-size: 12px; }
+  .trabajo h2 {
+    font-size: 15px; }
+  .trabajo form div label {
+    font-size: 12px;
+    margin: 5px; }
+  .trabajo form div input {
+    height: 20px; }
+  .trabajo form input {
+    font-size: 10px;
+    margin: 5px;
+    height: 30px; } }
 
 @media screen and (max-width: 494px) {
   .hero a {
