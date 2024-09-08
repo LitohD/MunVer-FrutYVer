@@ -98,6 +98,36 @@ header nav div div img {
     width: 400px;
     border: 2px solid; }
 
+.contacto {
+  background-color: #b11616;
+  color: white; }
+  .contacto div {
+    padding: 20px;
+    text-align: center;
+    width: 70%;
+    margin: auto; }
+    .contacto div h1 {
+      font-size: 40px;
+      margin: 10px; }
+    .contacto div p {
+      font-size: 20px;
+      margin: 10px; }
+    .contacto div h2 {
+      font-size: 25px;
+      margin: 20px; }
+    .contacto div ul li {
+      margin: 5px; }
+  .contacto form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    margin: auto; }
+    .contacto form input {
+      width: 50%;
+      margin: auto; }
+
 .trabajo {
   background: #91eca0;
   background: linear-gradient(70deg, #91eca0 43%, rgba(134, 21, 21, 0.592875) 100%);
@@ -219,6 +249,20 @@ header nav div div img {
     font-size: 20px; }
   .presentacion {
     display: none; } }
+
+@media screen and (max-width: 800px) {
+  .contacto div {
+    width: 80%; }
+    .contacto div h1 {
+      font-size: 30px; }
+    .contacto div p {
+      font-size: 15px; }
+    .contacto div h2 {
+      font-size: 20px; }
+  .contacto form {
+    width: 80%; }
+    .contacto form input {
+      width: 100%; } }
 
 @media screen and (max-width: 747px) {
   .grid-redes a img {

@@ -69,6 +69,30 @@
     }
 }
 
+@media screen and(max-width: 800px){
+    .contacto{
+        div{
+            width: 80%;
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 15px;
+            }
+            h2{
+                font-size: 20px;
+            }
+        }
+        form{
+            width: 80%;
+            input{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width:747px) {
     .grid-redes{
         a{
