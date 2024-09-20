@@ -1,19 +1,54 @@
-.promocion{
-    width: 700px; 
+.pg-productos{
+    h1 {
+        @extend %titulo-principal;
+        font-size: 40px;
+        margin: 30px;
+    }
+}
+
+.promocion {
+    width: 700px;
     height: 400px;
     margin: auto;
 }
-.verduras{
-    h2{
-        margin: 20px;
-        font-size: 25px;
+
+.ventas {
+    h2 {
         @extend %titulo-principal;
+        font-size: 40px;
+        margin: 30px;
     }
 }
-.frutas{
-    h2{
+
+.tarjetas {
+    flex-wrap: wrap;
+    @include flex(flex, space-around, center);
+
+    .producto {
+        width: 250px;
+        height: 380px;
+        border: 2px solid;
+        border-radius: 10px;
         margin: 20px;
-        font-size: 25px;
-        @extend %titulo-principal;
+        text-align: center;
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        input {
+            align-items: center;
+            margin: 10px;
+        }
     }
+
+    button {
+        background-color: $color-primario;
+
+        &:hover {
+            background-color: $color-secundario;
+        }
+    }
+
 }

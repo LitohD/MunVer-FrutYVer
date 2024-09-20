@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-.trabajo h1, .trabajo h2, .verduras h2, .frutas h2 {
+.trabajo h1, .trabajo h2, .pg-productos h1, .ventas h2 {
   text-align: center;
   color: #850909; }
 
@@ -42,7 +42,8 @@ header nav div div img {
   color: #850909;
   padding: 20px;
   background-color: bisque;
-  text-align: center; }
+  text-align: center;
+  margin: none; }
 
 .hero h2 {
   color: blueviolet;
@@ -79,9 +80,10 @@ header nav div div img {
     .productos-contenedor .producto input {
       align-items: center;
       margin: 10px; }
-    .productos-contenedor .producto button {
-      background-color: #850909;
-      border: color black 1px; }
+  .productos-contenedor button {
+    background-color: #850909; }
+    .productos-contenedor button:hover {
+      background-color: #7fa072; }
 
 .presentacion {
   display: flex;
@@ -228,18 +230,41 @@ header nav div div img {
     .trabajo form .boton:hover {
       background-color: #850909; }
 
+.pg-productos h1 {
+  font-size: 40px;
+  margin: 30px; }
+
 .promocion {
   width: 700px;
   height: 400px;
   margin: auto; }
 
-.verduras h2 {
-  margin: 20px;
-  font-size: 25px; }
+.ventas h2 {
+  font-size: 40px;
+  margin: 30px; }
 
-.frutas h2 {
-  margin: 20px;
-  font-size: 25px; }
+.tarjetas {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .tarjetas .producto {
+    width: 250px;
+    height: 380px;
+    border: 2px solid;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    transition: 1s; }
+    .tarjetas .producto:hover {
+      transform: scale(1.1); }
+    .tarjetas .producto input {
+      align-items: center;
+      margin: 10px; }
+  .tarjetas button {
+    background-color: #850909; }
+    .tarjetas button:hover {
+      background-color: #7fa072; }
 
 .grid-footer {
   display: grid;
@@ -273,7 +298,9 @@ header nav div div img {
 
 @media screen and (max-width: 1181px) {
   .hero h1 {
-    font-size: 40px; } }
+    font-size: 40px; }
+  .pg-productos h1 {
+    font-size: 35px; } }
 
 @media screen and (max-width: 1161px) {
   .hero a {
@@ -322,7 +349,10 @@ header nav div div img {
   .contacto form {
     width: 80%; }
     .contacto form input {
-      width: 100%; } }
+      width: 100%; }
+  .promocion {
+    width: 500px;
+    height: 300px; } }
 
 @media screen and (max-width: 747px) {
   .grid-redes a img {
@@ -353,7 +383,10 @@ header nav div div img {
     flex-wrap: wrap;
     justify-content: center; }
   .grid-footer {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .pg-productos h1 {
+    font-size: 25px;
+    margin: 20px; } }
 
 @media screen and (max-width: 659px) {
   .hero a {
@@ -377,6 +410,11 @@ header nav div div img {
     font-size: 10px;
     margin: 5px;
     height: 30px; } }
+
+@media screen and (max-width: 530px) {
+  .promocion {
+    width: 350px;
+    height: 200px; } }
 
 @media screen and (max-width: 494px) {
   .hero a {

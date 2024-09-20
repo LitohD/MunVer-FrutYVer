@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos.css">
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <meta name="description"
         content="Todo tipo de frutas y verduras. Variedades y combos inteligentes para una alimentación sana y balanceada">
@@ -57,7 +56,7 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="pg-productos">
             <h1>¡Las mejores y más frescas frutas y verduras están aquí!</h1>
             <!--CARRUSEL-->
             <div id="carouselExampleAutoplaying" class="carousel slide promocion" data-bs-ride="carousel">
@@ -87,37 +86,110 @@
                 </button>
             </div>
         </section>
-        <section class="verduras">
+        <section class="ventas">
             <!--SECCION DE VERDURAS, TARJETAS-->
             <h2>Verduras</h2>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Launch demo modal
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="tarjetas">
+                <div class="producto">
+                    <h3>Zanahoria</h3>
+                    <img src="../img/zanahoria.jpg"
+                        alt="Racimo de zanahorias color naranja brillante, y verde oscuro en las hojas">
+                    <p>El kilo - $xx</p>
+                    <input type="number">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar al carrito
+                    </button>
+                </div>
+                <div class="producto">
+                    <h3>Coliflor</h3>
+                    <img src="../img/Coliflor.jpg"
+                        alt="Coliflor color bien blanco, con las hojas envueltas de color verde fuerte">
+                    <p>La unidad - $xx</p>
+                    <input type="number">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar al carrito
+                    </button>
+                </div>
+                <div class="producto">
+                    <h3>Remolacha</h3>
+                    <img src="../img/remolacha.jpg"
+                        alt="Una remolacha, color bordo el tubérculo y verde oscuro en las hojas">
+                    <p>Atado x6 - $xx</p>
+                    <input type="number">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar al carrito
+                    </button>
+                </div>
+                <div class="producto">
+                    <h3>Cebolla verdeo</h3>
+                    <img src="../img/cebolla-verdeo.jpg"
+                        alt="Racimo de cebolla de verdeo, color violeta en el tallo y verde oscuro en las hojas">
+                    <p>Atado x6 - $xx</p>
+                    <input type="number">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+            <h2>Frutas</h2>
+            <div class="tarjetas">
+                <div class="producto">
+                    <h3>Banana</h3>
+                    <img src="../img/banana.jpg" alt="Racimo de banana brasil, color amarillo clarito">
+                    <p>El kilo - $xx</p>
+                    <input type="number">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar al carrito
+                    </button>
+                </div>
+                <div class="producto">
+                    <h3>Mandarina</h3>
+                    <img src="../img/mandarina.jpg" alt="Mandarina color anaranjada con hojas, y gajos de mandarina">
+                    <p>El kilo - $xx</p>
+                    <input type="number">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar al carrito
+                    </button>
+                </div>
+                <div class="producto">
+                    <h3>Pera</h3>
+                    <img src="../img/pera.jpg" alt="Pera madura amarilla, cortada por la mitad con hojas">
+                    <p>El kilo - $xx</p>
+                    <input type="number">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar al carrito
+                    </button>
+                </div>
+                <div class="producto">
+                    <h3>Naranja</h3>
+                    <img src="../img/naranja.jpg"
+                        alt="Naranja grande, cortada a la mitad y en gajos, color anaranjada con hojas">
+                    <p>El kilo - $xx</p>
+                    <input type="number">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar al carrito
+                    </button>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title fs-5" id="exampleModalLabel">Excelente!</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Producto agregado al carrito con éxito!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar</button>
+                                <button type="button" class="btn btn-primary">Ir al carrito</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="frutas">
-            <!--SECCION DE FRUTAS, TARJETAS-->
-            <h2>Frutas</h2>
         </section>
         <div class="chat">
             <a href=""><img src="../img/chat.png"

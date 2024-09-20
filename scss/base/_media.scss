@@ -4,6 +4,11 @@
             font-size: 40px;
         }
     }
+    .pg-productos{
+        h1{
+            font-size: 35px;
+        }
+    }
 }
 
 @media screen and (max-width:1161px) {
@@ -90,6 +95,10 @@
             }
         }
     }
+    .promocion{
+        width: 500px;
+        height: 300px;
+    }
 }
 
 
@@ -150,6 +159,12 @@
     .grid-footer{
         flex-direction: column
         }
+    .pg-productos{
+        h1{
+            font-size: 25px;
+            margin: 20px;
+        }
+    }
 }
 
 @media screen and (max-width:659px) {
@@ -192,6 +207,13 @@
                 height: 30px;
             }
         }
+    }
+}
+
+@media screen and (max-width: 530px){
+    .promocion{
+        width: 350px;
+        height: 200px;
     }
 }
 

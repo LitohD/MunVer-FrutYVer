@@ -13,6 +13,7 @@
         padding: 20px;
         background-color: bisque;
         text-align: center;
+        margin: none;
     }
 
     h2 {
@@ -25,11 +26,13 @@
         animation-timing-function: ease-in;
         animation-direction: initial;
         animation-iteration-count: 1;
-        @keyframes aparicion{
-            from{
+
+        @keyframes aparicion {
+            from {
                 margin-right: 100%;
             }
-            to{
+
+            to {
                 margin-right: 0%;
             }
         }
@@ -40,7 +43,7 @@
     flex-wrap: wrap;
     @include flex(flex, space-around, center);
 
-    .producto{
+    .producto {
         width: 250px;
         height: 380px;
         border: 2px solid;
@@ -48,15 +51,22 @@
         margin: 20px;
         text-align: center;
         transition: 1s;
+
         &:hover {
-            transform: scale(1.1);}
+            transform: scale(1.1);
+        }
+
         input {
             align-items: center;
             margin: 10px;
         }
-        button{
-            background-color: $color-primario;
-            border: color black 1px;
+    }
+
+    button {
+        background-color: $color-primario;
+
+        &:hover {
+            background-color: $color-secundario;
         }
     }
 }
@@ -102,8 +112,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        div{
-            img{
+
+        div {
+            img {
                 width: 400px;
                 border: 2px solid;
             }
