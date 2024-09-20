@@ -1,0 +1,19 @@
+//COLORES
+
+$color-primario: rgb(133, 9, 9);
+$color-secundario: #7fa072;
+
+//EXTENDS
+
+%titulo-principal{
+    text-align: center;
+    color: $color-primario;
+}
+
+//MIXIN
+
+@mixin flex($display, $justify, $aling){
+    display: $display;
+    justify-content: $justify;
+    align-items: $aling;
+}

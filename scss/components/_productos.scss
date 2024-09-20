@@ -1,0 +1,19 @@
+.promocion{
+    width: 700px; 
+    height: 400px;
+    margin: auto;
+}
+.verduras{
+    h2{
+        margin: 20px;
+        font-size: 25px;
+        @extend %titulo-principal;
+    }
+}
+.frutas{
+    h2{
+        margin: 20px;
+        font-size: 25px;
+        @extend %titulo-principal;
+    }
+}

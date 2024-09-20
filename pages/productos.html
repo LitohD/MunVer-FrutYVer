@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    <title>Mundo Verde | frutas y verduras</title>
+    <meta name="description"
+        content="Todo tipo de frutas y verduras. Variedades y combos inteligentes para una alimentación sana y balanceada">
+    <meta name="keywords"
+        content="frutas, verduras, combos, canastas, productos, variedad, comida, precio, barato, calidad, bueno">
+    <title>Mundo Verde | frutas y verduras | Promociones, ofertas, combos, canasta inteligente</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg menu-bg">
@@ -19,7 +26,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a href="../index.html"><img src="../img/logo-fondo.png" alt="logo de la empresa, una camioneta sobre fondo verde llevando un pedido de frutas y verduras"></a>
+                    <a href="../index.html"><img src="../img/logo-fondo.png"
+                            alt="logo de la empresa, una camioneta sobre fondo verde llevando un pedido de frutas y verduras"></a>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item enlace-composicion">
                             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
@@ -31,13 +39,15 @@
                             <a class="nav-link" aria-disabled="true" href="../pages/noticias.html">Noticias</a>
                         </li>
                         <li class="nav-item enlace-composicion">
-                            <a class="nav-link" aria-disabled="true" href="../pages/empleo.html">Trabaja con nosotros</a>
+                            <a class="nav-link" aria-disabled="true" href="../pages/empleo.html">Trabaja con
+                                nosotros</a>
                         </li>
                         <li class="nav-item enlace-composicion">
                             <a class="nav-link" aria-disabled="true" href="../pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <img src="../img/carrito.png" alt="Logo de un carrito de supermercado, en color negro. A medida que se vayan agregando productos, el número ira aumentando">
+                    <img src="../img/carrito.png"
+                        alt="Logo de un carrito de supermercado, en color negro. A medida que se vayan agregando productos, el número ira aumentando">
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn btn-outline-dark" type="submit">Buscar</button>
@@ -48,34 +58,90 @@
     </header>
     <main>
         <section>
-            <!--FRUTAS Y VERDURAS EN OFERTA, COMBOS, DFRUTAAS Y VERDURAS DE ESTACION, TARJETAS-->
-            <h2>Ofertas</h2>
+            <h1>¡Las mejores y más frescas frutas y verduras están aquí!</h1>
+            <!--CARRUSEL-->
+            <div id="carouselExampleAutoplaying" class="carousel slide promocion" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/fruver3.jpg" class="d-block w-100"
+                            alt="frutas y verduras variadas en una canasta de madera">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/fruver2.jpg" class="d-block w-100"
+                            alt="frutas y verduras variadas sobre una mesa en un muestrario">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/fruver1.jpg" class="d-block w-100"
+                            alt="frutas y verduras variadas en una canasta de madera">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previa</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
         </section>
-        <section>
+        <section class="verduras">
             <!--SECCION DE VERDURAS, TARJETAS-->
             <h2>Verduras</h2>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
+        <section class="frutas">
             <!--SECCION DE FRUTAS, TARJETAS-->
             <h2>Frutas</h2>
         </section>
-        
         <div class="chat">
-            <a href=""><img src="../img/chat.png" alt="Logo de burbujas de chat transparente con contorno en líneas negras"></a>
+            <a href=""><img src="../img/chat.png"
+                    alt="Logo de burbujas de chat transparente con contorno en líneas negras"></a>
         </div>
     </main>
     <footer class="grid-footer">
         <!--MAPA-->
         <div class="grid-mapa">
             <h3>Entérate donde encontrarnos</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4284.88285928587!2d-56.13765425375219!3d-34.89541063089028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81228bb85f1d%3A0xcc308d07346ad31f!2sLa%20Rinconada!5e0!3m2!1ses-419!2suy!4v1722190973344!5m2!1ses-419!2suy" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4284.88285928587!2d-56.13765425375219!3d-34.89541063089028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81228bb85f1d%3A0xcc308d07346ad31f!2sLa%20Rinconada!5e0!3m2!1ses-419!2suy!4v1722190973344!5m2!1ses-419!2suy"
+                width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <!--REDES SOCIALES-->
         <div class="grid-redes">
             <h3>Siguenos!</h3>
-            <a href="https://web.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png" alt="Imágen del logo de whatsapp en forma de círculo color verde"></a>
-            <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="../img/facebook.png" alt="Imágen del logo de facebook en forma de círculo color azul"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="Imágen del logo de instagram en forma de círculo color amarillo, rojo y violeta"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png"
+                    alt="Imágen del logo de whatsapp en forma de círculo color verde"></a>
+            <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="../img/facebook.png"
+                    alt="Imágen del logo de facebook en forma de círculo color azul"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png"
+                    alt="Imágen del logo de instagram en forma de círculo color amarillo, rojo y violeta"></a>
         </div>
         <!--CORREO, CUADRO Y BOTON-->
         <div class="grid-correo">
@@ -91,4 +157,5 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

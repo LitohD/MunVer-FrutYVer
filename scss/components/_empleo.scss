@@ -8,8 +8,7 @@
     h1{
         font-size: 40px;
         margin: 20px;
-        color: #861515;
-        text-align: center;
+        @extend %titulo-principal
     }
     p{
         font-size: 20px;
@@ -18,8 +17,7 @@
     }
     h2{
         font-size: 30px;
-        color: #861515;
-        text-align: center;
+        @extend %titulo-principal;
         margin: 20px;
     }
     form{
@@ -58,7 +56,7 @@
             transition-property: background-color;
             transition-duration: 1s;
             &:hover{
-                background-color: #861515;
+                background-color: $color-primario;
             }
         }
     }

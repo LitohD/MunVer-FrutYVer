@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.trabajo h1, .trabajo h2, .verduras h2, .frutas h2 {
+  text-align: center;
+  color: #850909; }
+
 /*!RESET*/
 * {
   margin: 0;
@@ -25,12 +29,13 @@ header nav div div img {
   right: 50px; }
 
 .hero a {
-  display: flex;
   color: red;
   font-size: 30px;
-  justify-content: center;
   text-decoration: none;
-  background-color: black; }
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .hero h1 {
   font-size: 50px;
@@ -42,23 +47,41 @@ header nav div div img {
 .hero h2 {
   color: blueviolet;
   text-align: center;
-  font-size: 30px;
-  margin: 20px; }
+  font-size: 40px;
+  margin: 20px;
+  animation-name: aparicion;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-direction: initial;
+  animation-iteration-count: 1; }
+
+@keyframes aparicion {
+  from {
+    margin-right: 100%; }
+  to {
+    margin-right: 0%; } }
 
 .productos-contenedor {
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
-  .productos-contenedor div {
+  align-items: center; }
+  .productos-contenedor .producto {
     width: 250px;
     height: 380px;
     border: 2px solid;
+    border-radius: 10px;
     margin: 20px;
-    text-align: center; }
-    .productos-contenedor div input {
+    text-align: center;
+    transition: 1s; }
+    .productos-contenedor .producto:hover {
+      transform: scale(1.1); }
+    .productos-contenedor .producto input {
       align-items: center;
       margin: 10px; }
+    .productos-contenedor .producto button {
+      background-color: #850909;
+      border: color black 1px; }
 
 .presentacion {
   display: flex;
@@ -84,7 +107,7 @@ header nav div div img {
 
 .opiniones h2 {
   text-align: center;
-  color: #6cc449;
+  color: #7fa072;
   padding: 20px;
   background-color: #850909;
   width: 100%; }
@@ -99,34 +122,62 @@ header nav div div img {
     border: 2px solid; }
 
 .contacto {
-  background-color: #b11616;
-  color: white; }
-  .contacto div {
-    padding: 20px;
-    text-align: center;
-    width: 70%;
-    margin: auto; }
-    .contacto div h1 {
+  background-color: rgba(0, 0, 0, 0); }
+  .contacto .comentario-contacto {
+    text-align: center; }
+    .contacto .comentario-contacto h1 {
+      color: #850909;
+      font-size: 50px;
+      padding: 10px; }
+    .contacto .comentario-contacto p {
+      width: 70%;
+      margin: auto;
+      color: #7fa072;
+      font-size: 30px; }
+    .contacto .comentario-contacto h2 {
+      color: #850909;
       font-size: 40px;
-      margin: 10px; }
-    .contacto div p {
+      padding: 10px; }
+    .contacto .comentario-contacto ul li {
+      color: #7fa072;
+      width: 80%;
+      margin: auto;
       font-size: 20px;
-      margin: 10px; }
-    .contacto div h2 {
-      font-size: 25px;
-      margin: 20px; }
-    .contacto div ul li {
-      margin: 5px; }
-  .contacto form {
+      padding: 10px; }
+  .contacto .datos-contacto {
     display: flex;
-    flex-direction: column;
-    padding: 20px;
-    width: 50%;
-    text-align: center;
-    margin: auto; }
-    .contacto form input {
-      width: 50%;
+    padding: 10px; }
+  .contacto .info-contacto {
+    margin: 10px;
+    text-align: center; }
+    .contacto .info-contacto h2 {
+      color: #850909;
+      font-size: 30px;
+      margin: 10px; }
+    .contacto .info-contacto p {
+      color: #7fa072;
+      font-size: 22px;
+      width: 80%;
       margin: auto; }
+  .contacto .form-contacto {
+    padding: 10px;
+    border: solid 5px;
+    border-radius: 20px; }
+    .contacto .form-contacto label {
+      color: #850909;
+      padding: 10px;
+      font-size: 20px; }
+    .contacto .form-contacto a {
+      text-decoration: none;
+      color: #850909;
+      padding: 5px;
+      border: solid #850909 2px;
+      border-radius: 10px;
+      font-size: 20px;
+      transition-property: background-color;
+      transition-duration: 1s; }
+      .contacto .form-contacto a:hover {
+        background-color: pink; }
 
 .trabajo {
   background: #91eca0;
@@ -137,17 +188,13 @@ header nav div div img {
   margin: auto; }
   .trabajo h1 {
     font-size: 40px;
-    margin: 20px;
-    color: #861515;
-    text-align: center; }
+    margin: 20px; }
   .trabajo p {
     font-size: 20px;
     margin: 20px;
     text-align: center; }
   .trabajo h2 {
     font-size: 30px;
-    color: #861515;
-    text-align: center;
     margin: 20px; }
   .trabajo form div {
     margin: 10px; }
@@ -179,7 +226,20 @@ header nav div div img {
     transition-property: background-color;
     transition-duration: 1s; }
     .trabajo form .boton:hover {
-      background-color: #861515; }
+      background-color: #850909; }
+
+.promocion {
+  width: 700px;
+  height: 400px;
+  margin: auto; }
+
+.verduras h2 {
+  margin: 20px;
+  font-size: 25px; }
+
+.frutas h2 {
+  margin: 20px;
+  font-size: 25px; }
 
 .grid-footer {
   display: grid;

@@ -1,40 +1,73 @@
 .contacto{
-    background-color: rgb(177, 22, 22);
-    color: white;
-    div{
-        padding: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    .comentario-contacto{
         text-align: center;
-        width: 70%;
-        margin: auto;
         h1{
-            font-size: 40px;
-            margin: 10px;
+            color: $color-primario;
+            font-size: 50px;
+            padding: 10px;
         }
         p{
-            font-size: 20px;
-            margin: 10px;
+            width: 70%;
+            margin: auto;
+            color: $color-secundario;
+            font-size: 30px;
         }
         h2{
-            font-size: 25px;
-            margin: 20px;
+            color: $color-primario;
+            font-size: 40px;
+            padding: 10px;
         }
         ul{
             li{
-                margin: 5px;
-                }
+                color: $color-secundario;
+                width: 80%;
+                margin: auto;
+                font-size: 20px;
+                padding: 10px;
+            }
         }
     }
-    form{
+    .datos-contacto{
         display: flex;
-        flex-direction: column;
-        padding: 20px;
-        width: 50%;
+        padding: 10px;
+    }
+    .info-contacto{
+        margin: 10px;
         text-align: center;
-        margin: auto;
-        input{
-            width: 50%;
+        h2{
+            color: $color-primario;
+            font-size: 30px;
+            margin: 10px;
+        }
+        p{
+            color: $color-secundario;
+            font-size: 22px;
+            width: 80%;
             margin: auto;
         }
     }
-    
+    .form-contacto{
+        padding: 10px;
+        border: solid 5px;
+        border-radius: 20px;
+        label{
+            color: $color-primario;
+            padding: 10px;
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: $color-primario;
+            padding: 5px;
+            border: solid  $color-primario 2px;
+            border-radius: 10px;
+            font-size: 20px;
+            transition-property: background-color;
+            transition-duration: 1s;
+            &:hover{
+                background-color: pink;
+            }
+        }
+    }
 }

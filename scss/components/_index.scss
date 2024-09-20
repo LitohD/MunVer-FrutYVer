@@ -1,16 +1,15 @@
 .hero {
     a {
-        display: flex;
         color: red;
         font-size: 30px;
-        justify-content: center;
         text-decoration: none;
         background-color: black;
+        @include flex(flex, center, center);
     }
 
     h1 {
         font-size: 50px;
-        color: rgb(133, 9, 9);
+        color: $color-primario;
         padding: 20px;
         background-color: bisque;
         text-align: center;
@@ -19,27 +18,45 @@
     h2 {
         color: blueviolet;
         text-align: center;
-        font-size: 30px;
+        font-size: 40px;
         margin: 20px;
+        animation-name: aparicion;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-direction: initial;
+        animation-iteration-count: 1;
+        @keyframes aparicion{
+            from{
+                margin-right: 100%;
+            }
+            to{
+                margin-right: 0%;
+            }
+        }
     }
 }
 
 .productos-contenedor {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    @include flex(flex, space-around, center);
 
-    div {
+    .producto{
         width: 250px;
         height: 380px;
         border: 2px solid;
+        border-radius: 10px;
         margin: 20px;
         text-align: center;
-
+        transition: 1s;
+        &:hover {
+            transform: scale(1.1);}
         input {
             align-items: center;
             margin: 10px;
+        }
+        button{
+            background-color: $color-primario;
+            border: color black 1px;
         }
     }
 }
@@ -74,9 +91,9 @@
 .opiniones {
     h2 {
         text-align: center;
-        color: #6cc449;
+        color: $color-secundario;
         padding: 20px;
-        background-color: rgb(133, 9, 9);
+        background-color: $color-primario;
         width: 100%;
     }
 

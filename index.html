@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
-    <meta name="description" content="Puesto de frutas y verduras. Envíos a domicilio en tiempo y forma. Frescura y calidad a buen precio y al alcance de tu mano. Ofertas todo el año">
-    <meta name="keywords" content="frutas, verduras, puesto, mercado, fresco, comida, envios, banana, platano,manzana, kiwi, papa, espinaca, zapallo, lechuga, tomate, zanahoria, sandia">
+    <meta name="description"
+        content="Puesto de frutas y verduras. Envíos a domicilio en tiempo y forma. Frescura y calidad a buen precio y al alcance de tu mano. Ofertas todo el año">
+    <meta name="keywords"
+        content="frutas, verduras, puesto, mercado, fresco, comida, envios, banana, platano, manzana, kiwi, papa, espinaca, zapallo, lechuga, tomate, zanahoria, sandia">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <title>Mundo Verde | frutas y verduras | Envíos a domicilio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg menu-bg">
@@ -22,7 +26,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a href="./index.html"><img src="./img/logo-fondo.png" alt="logo de la empresa, una camioneta sobre fondo verde llevando un pedido de frutas y verduras"></a>
+                    <a href="./index.html"><img src="./img/logo-fondo.png"
+                            alt="logo de la empresa, una camioneta sobre fondo verde llevando un pedido de frutas y verduras"></a>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item enlace-composicion">
                             <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
@@ -40,7 +45,8 @@
                             <a class="nav-link" aria-disabled="true" href="./pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <img src="./img/carrito.png" alt="Logo de un carrito de supermercado, en color negro. A medida que se vayan agregando productos, el número ira aumentando">
+                    <img src="./img/carrito.png"
+                        alt="Logo de un carrito de supermercado, en color negro. A medida que se vayan agregando productos, el número ira aumentando">
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn btn-outline-dark" type="submit">Buscar</button>
@@ -57,94 +63,146 @@
             <h1>Mundo Verde, de la huerta directo a tu hogar</h1>
             <h2>Productos Destacados</h2>
             <div class="productos-contenedor">
-                <div>
+                <div class="producto">
                     <h3>Banana</h3>
                     <img src="./img/banana.jpg" alt="Racimo de banana brasil, color amarillo clarito">
                     <p>El kilo - $xx</p>
                     <input type="number">
-                    <input type="button" value="Agregar">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar al carrito
+                    </button>
                 </div>
-                <div>
+                <div class="producto">
                     <h3>Mandarina</h3>
                     <img src="./img/mandarina.jpg" alt="Mandarina color anaranjada con hojas, y gajos de mandarina">
                     <p>El kilo - $xx</p>
                     <input type="number">
-                    <input type="button" value="Agregar">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar al carrito
+                    </button>
                 </div>
-                <div>
+                <div class="producto">
                     <h3>Pera</h3>
                     <img src="./img/pera.jpg" alt="Pera madura amarilla, cortada por la mitad con hojas">
                     <p>El kilo - $xx</p>
                     <input type="number">
-                    <input type="button" value="Agregar">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar al carrito
+                    </button>
                 </div>
-                <div>
+                <div class="producto">
                     <h3>Naranja</h3>
-                    <img src="./img/naranja.jpg" alt="Naranja grande, cortada a la mitad y en gajos, color anaranjada con hojas">
+                    <img src="./img/naranja.jpg"
+                        alt="Naranja grande, cortada a la mitad y en gajos, color anaranjada con hojas">
                     <p>El kilo - $xx</p>
                     <input type="number">
-                    <input type="button" value="Agregar">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar al carrito
+                    </button>
                 </div>
-                <div>
+                <div class="producto">
                     <h3>Cebolla verdeo</h3>
-                    <img src="./img/cebolla-verdeo.jpg" alt="Racimo de cebolla de verdeo, color violeta en el tallo y verde oscuro en las hojas">
+                    <img src="./img/cebolla-verdeo.jpg"
+                        alt="Racimo de cebolla de verdeo, color violeta en el tallo y verde oscuro en las hojas">
                     <p>Atado x6 - $xx</p>
                     <input type="number">
-                    <input type="button" value="Agregar">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar al carrito
+                    </button>
                 </div>
-                <div>
+                <div class="producto">
                     <h3>Remolacha</h3>
-                    <img src="./img/remolacha.jpg" alt="Una remolacha, color bordo el tubérculo y verde oscuro en las hojas">
+                    <img src="./img/remolacha.jpg"
+                        alt="Una remolacha, color bordo el tubérculo y verde oscuro en las hojas">
                     <p>Atado x6 - $xx</p>
                     <input type="number">
-                    <input type="button" value="Agregar">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar al carrito
+                    </button>
                 </div>
-                <div>
+                <div class="producto">
                     <h3>Coliflor</h3>
-                    <img src="./img/Coliflor.jpg" alt="Coliflor color bien blanco, con las hojas envueltas de color verde fuerte">
+                    <img src="./img/Coliflor.jpg"
+                        alt="Coliflor color bien blanco, con las hojas envueltas de color verde fuerte">
                     <p>La unidad - $xx</p>
                     <input type="number">
-                    <input type="button" value="Agregar">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar al carrito
+                    </button>
                 </div>
-                <div>
+                <div class="producto">
                     <h3>Zanahoria</h3>
-                    <img src="./img/zanahoria.jpg" alt="Racimo de zanahorias color naranja brillante, y verde oscuro en las hojas">
+                    <img src="./img/zanahoria.jpg"
+                        alt="Racimo de zanahorias color naranja brillante, y verde oscuro en las hojas">
                     <p>El kilo - $xx</p>
                     <input type="number">
-                    <input type="button" value="Agregar">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar al carrito
+                    </button>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Excelente!</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Producto agregado al carrito con éxito!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar</button>
+                                <button type="button" class="btn btn-primary">Ir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="presentacion">
             <!--TITULO Y TEXTO VARIO CON IMAGEN DE FONDO-->
             <h2>Mundo Verde: Frescura a tu Puerta</h2>
-            <p>En Mundo Verde, transformamos tu hogar con la mejor selección de frutas y verduras frescas, entregadas directamente a tu puerta. Disfruta de productos de alta calidad y sabor en cada pedido. ¡La frescura de la naturaleza, ahora más cerca de ti!</p>
+            <p>En Mundo Verde, transformamos tu hogar con la mejor selección de frutas y verduras frescas, entregadas
+                directamente a tu puerta. Disfruta de productos de alta calidad y sabor en cada pedido. ¡La frescura de
+                la naturaleza, ahora más cerca de ti!</p>
         </section>
         <section class="opiniones">
             <!--CUADROS DE OPINIONES-->
             <h2>Opiniones de clientes</h2>
             <div>
-                <div><img src="./img/opinion1.png" alt="Imágen de un comentario de un usuario sobre el uso de la aplicación y puntuación"></div>
-                <div><img src="./img/opinion2.png" alt="Imágen de un comentario de un usuario sobre el uso de la aplicación y puntuación"></div>
-                <div><img src="./img/opinion3.png" alt="Imágen de un comentario de un usuario sobre el uso de la aplicación y puntuación"></div>
+                <div><img src="./img/opinion1.png"
+                        alt="Imágen de un comentario de un usuario sobre el uso de la aplicación y puntuación"></div>
+                <div><img src="./img/opinion2.png"
+                        alt="Imágen de un comentario de un usuario sobre el uso de la aplicación y puntuación"></div>
+                <div><img src="./img/opinion3.png"
+                        alt="Imágen de un comentario de un usuario sobre el uso de la aplicación y puntuación"></div>
             </div>
         </section>
         <div class="chat">
-            <a href=""><img src="./img/chat.png" alt="Logo de burbujas de chat transparente con contorno en líneas negras"></a>
+            <a href=""><img src="./img/chat.png"
+                    alt="Logo de burbujas de chat transparente con contorno en líneas negras"></a>
         </div>
     </main>
     <footer class="grid-footer">
         <!--MAPA-->
         <div class="grid-mapa">
             <h3>Entérate donde encontrarnos</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4284.88285928587!2d-56.13765425375219!3d-34.89541063089028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81228bb85f1d%3A0xcc308d07346ad31f!2sLa%20Rinconada!5e0!3m2!1ses-419!2suy!4v1722190973344!5m2!1ses-419!2suy" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4284.88285928587!2d-56.13765425375219!3d-34.89541063089028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81228bb85f1d%3A0xcc308d07346ad31f!2sLa%20Rinconada!5e0!3m2!1ses-419!2suy!4v1722190973344!5m2!1ses-419!2suy"
+                width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <!--REDES SOCIALES-->
         <div class="grid-redes">
             <h3>Siguenos!</h3>
-            <a href="https://web.whatsapp.com/" target="_blank"><img src="./img/whatsapp.png" alt="Imágen del logo de whatsapp en forma de círculo color verde"></a>
-            <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="./img/facebook.png" alt="Imágen del logo de facebook en forma de círculo color azul"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="Imágen del logo de instagram en forma de círculo color amarillo, rojo y violeta"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="./img/whatsapp.png"
+                    alt="Imágen del logo de whatsapp en forma de círculo color verde"></a>
+            <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="./img/facebook.png"
+                    alt="Imágen del logo de facebook en forma de círculo color azul"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png"
+                    alt="Imágen del logo de instagram en forma de círculo color amarillo, rojo y violeta"></a>
         </div>
         <!--CORREO, CUADRO Y BOTON-->
         <div class="grid-correo">
@@ -160,4 +218,5 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
