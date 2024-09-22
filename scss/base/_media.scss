@@ -45,6 +45,45 @@
         font-size: 20px;
         }
     }
+    .contacto{ 
+        .comentario-contacto{
+            h1{
+                font-size: 35px;
+            }
+            p{
+                font-size: 25px;
+            }
+            h2{
+                font-size: 30px;
+            }
+            ul{
+                li{
+                    font-size: 18px;
+                }
+            }
+        }
+        .info-contacto{
+            h2{
+                font-size: 20px;
+            }
+            p{
+                font-size: 18px;
+                margin: 20px;
+            }
+        }
+        .form-contacto{
+            label{
+                font-size: 15px;
+                padding: 5px;
+            }
+            input{
+                padding: 0px;
+            }
+            a{
+                font-size: 15px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:954px) {
@@ -74,27 +113,7 @@
     }
 }
 
-@media screen and(max-width: 800px){
-    .contacto{
-        div{
-            width: 80%;
-            h1{
-                font-size: 30px;
-            }
-            p{
-                font-size: 15px;
-            }
-            h2{
-                font-size: 20px;
-            }
-        }
-        form{
-            width: 80%;
-            input{
-                width: 100%;
-            }
-        }
-    }
+@media screen and(max-width: 801px){
     .promocion{
         width: 500px;
         height: 300px;
@@ -203,11 +222,45 @@
             }
             input{
                 font-size: 10px;
-                margin: 5px;
+                margin: auto;
                 height: 30px;
             }
         }
     }
+    .contacto{
+        .comentario-contacto{
+            p{
+                font-size: 20px;
+                width: 90%;
+                margin: auto;
+            }
+            ul{
+                li{
+                    width: 90%;
+                    margin: 5px;
+                }
+            }
+        }
+        .datos-contacto{
+            flex-direction: column;
+        }
+        .info-contacto{
+            h2{
+                font-size: 25px;
+                ;
+            }
+            p{
+                width: 90%;
+                margin: auto;
+                padding: 5px;
+            }
+        }
+        .form-contacto{
+            width: 90%;
+            margin: auto;
+        }
+    }
+    
 }
 
 @media screen and (max-width: 530px){
@@ -250,6 +303,16 @@
                     padding: 10px;
                     justify-content: center;
                 }
+            }
+        }
+    }
+    .contacto{
+        .comentario-contacto{
+            h1{
+                font-size: 25px;
+            }
+            h2{
+                font-size: 25px;
             }
         }
     }
