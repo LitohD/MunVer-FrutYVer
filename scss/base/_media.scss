@@ -1,11 +1,12 @@
 @media screen and (max-width:1181px) {
     .hero {
-        h1{
+        h1 {
             font-size: 40px;
         }
     }
-    .pg-productos{
-        h1{
+
+    .pg-productos {
+        h1 {
             font-size: 35px;
         }
     }
@@ -13,8 +14,8 @@
 
 @media screen and (max-width:1161px) {
     .hero {
-        a{
-        font-size: 30px;
+        a {
+            font-size: 30px;
         }
     }
 
@@ -22,8 +23,8 @@
 
 @media screen and (max-width:1061px) {
     .grid-footer {
-        div{
-            h3{
+        div {
+            h3 {
                 font-size: 20px;
             }
         }
@@ -32,116 +33,269 @@
 
 @media screen and (max-width:989px) {
     .hero {
-        a{
+        a {
             font-size: 20px;
         }
-        h1{
+
+        h1 {
             font-size: 30px;
         }
-    .presentacion h2{
-        font-size: 50px;
+
+        .presentacion h2 {
+            font-size: 50px;
         }
-    .presentacion p{
-        font-size: 20px;
+
+        .presentacion p {
+            font-size: 20px;
         }
     }
-    .contacto{ 
-        .comentario-contacto{
-            h1{
+
+    .contacto {
+        .comentario-contacto {
+            h1 {
                 font-size: 35px;
             }
-            p{
+
+            p {
                 font-size: 25px;
             }
-            h2{
+
+            h2 {
                 font-size: 30px;
             }
-            ul{
-                li{
+
+            ul {
+                li {
                     font-size: 18px;
                 }
             }
         }
-        .info-contacto{
-            h2{
+
+        .info-contacto {
+            h2 {
                 font-size: 20px;
             }
-            p{
+
+            p {
                 font-size: 18px;
                 margin: 20px;
             }
         }
-        .form-contacto{
-            label{
+
+        .form-contacto {
+            label {
                 font-size: 15px;
                 padding: 5px;
             }
-            input{
+
+            input {
                 padding: 0px;
             }
-            a{
+
+            a {
                 font-size: 15px;
+            }
+        }
+    }
+
+    .contenido {
+        .recetas {
+            .receta-1 {
+                p {
+                    font-size: 16px;
+                }
+
+                ol {
+                    li {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .receta-2 {
+                grid-template-rows: 50px 50px 100px 50px 280px;
+
+                img {
+                    height: 400px;
+                }
+
+                ol {
+                    li {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .postre-1 {
+                h2 {
+                    font-size: 18px;
+                }
+
+                h3 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                h4 {
+                    font-size: 18px;
+                }
+
+                ol {
+                    li {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .postre-2 {
+                p {
+                    font-size: 18px;
+                }
+
+                ol {
+                    li {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+
+        .noticias {
+            .articulo-6 {
+                height: 400px;
+
+                a {
+                    p {
+                        font-size: 18px;
+                    }
+                }
             }
         }
     }
 }
 
 @media screen and (max-width:954px) {
-    .grid-footer{
+    .grid-footer {
         padding: 10px;
+    }
+
+    .contenido {
+        .recetas {
+            .postre-3 {
+                h2 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 22px;
+                }
+
+                ol {
+                    li {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width:934px) {
-    .grid-footer{
+    .grid-footer {
         display: flex;
         justify-content: space-around;
-        }
-    .grid-mapa{
-    display: none;
     }
-}
 
-@media screen and (max-width:870px) {
-    .hero{
-        a{
-            font-size: 20px;
-        }
-    }
-    .presentacion{
+    .grid-mapa {
         display: none;
     }
 }
 
-@media screen and(max-width: 801px){
-    .promocion{
+@media screen and (max-width:870px) {
+    .hero {
+        a {
+            font-size: 20px;
+        }
+    }
+
+    .presentacion {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .contenido {
+        .recetas {
+            .receta-2 {
+                h2 {
+                    font-size: 16px;
+                }
+
+                ul {
+                    li {
+                        font-size: 16px;
+                    }
+                }
+
+                ol {
+                    li {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 808px) {
+    .promocion {
         width: 500px;
         height: 300px;
     }
 }
 
 
-@media screen and (max-width:747px) {
-    .grid-redes{
-        a{
-            img{
+@media screen and (max-width:754px) {
+    .grid-redes {
+        a {
+            img {
                 padding: 5px;
             }
+        }
+    }
+
+    .contenido {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "receta receta receta"
+            "receta receta receta"
+            "receta receta receta"
+            "receta receta receta"
+            "receta receta receta";
+
+        .noticias {
+            display: none;
         }
     }
 }
 
 @media screen and (max-width:735px) {
-    .trabajo{
-        h1{
+    .trabajo {
+        h1 {
             font-size: 30px;
             margin: 10px;
         }
-        p{
+
+        p {
             font-size: 15px;
             margin: 10px;
         }
-        h2{
+
+        h2 {
             font-size: 20px;
             margin: 10px;
         }
@@ -149,37 +303,40 @@
 }
 
 @media screen and (max-width:724px) {
-    .hero{
-        h1{
-        font-size: 25px;
-        padding: 10px;
+    .hero {
+        h1 {
+            font-size: 25px;
+            padding: 10px;
         }
     }
-    .grid-redes 
-        {a {
-            img{
-            width: 50px;
+
+    .grid-redes {
+        a {
+            img {
+                width: 50px;
             }
         }
     }
 }
 
 @media screen and (max-width:695px) {
-    .opiniones{ 
-        div{
-            div{
-            display: flex;
-            padding: 10px;
-            flex-wrap: wrap;
-            justify-content: center;
+    .opiniones {
+        div {
+            div {
+                display: flex;
+                padding: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
             }
         }
     }
-    .grid-footer{
+
+    .grid-footer {
         flex-direction: column
-        }
-    .pg-productos{
-        h1{
+    }
+
+    .pg-productos {
+        h1 {
             font-size: 25px;
             margin: 20px;
         }
@@ -187,118 +344,257 @@
 }
 
 @media screen and (max-width:659px) {
-    .hero{
-        a{
+    .hero {
+        a {
             font-size: 15px;
         }
     }
 }
 
 @media screen and (max-width:590px) {
-    .hero{
-        h1{
+    .hero {
+        h1 {
             font-size: 20px;
         }
     }
-    .trabajo{
-        h1{
+
+    .trabajo {
+        h1 {
             font-size: 20px;
         }
-        p{
+
+        p {
             font-size: 12px;
         }
-        h2{
+
+        h2 {
             font-size: 15px;
         }
-        form{
-            div{
-                label{
+
+        form {
+            div {
+                label {
                     font-size: 12px;
                     margin: 5px;
                 }
-                input{
+
+                input {
                     height: 20px;
                 }
             }
-            input{
+
+            input {
                 font-size: 10px;
                 margin: auto;
                 height: 30px;
             }
         }
     }
-    .contacto{
-        .comentario-contacto{
-            p{
+
+    .contacto {
+        .comentario-contacto {
+            p {
                 font-size: 20px;
                 width: 90%;
                 margin: auto;
             }
-            ul{
-                li{
+
+            ul {
+                li {
                     width: 90%;
                     margin: 5px;
                 }
             }
         }
-        .datos-contacto{
+
+        .datos-contacto {
             flex-direction: column;
         }
-        .info-contacto{
-            h2{
+
+        .info-contacto {
+            h2 {
                 font-size: 25px;
                 ;
             }
-            p{
+
+            p {
                 width: 90%;
                 margin: auto;
                 padding: 5px;
             }
         }
-        .form-contacto{
+
+        .form-contacto {
             width: 90%;
             margin: auto;
         }
     }
-    
+
 }
 
-@media screen and (max-width: 530px){
-    .promocion{
+@media screen and (max-width: 565px) {
+    .contenido {
+        .recetas {
+            h1 {
+                font-size: 30px;
+                margin: 10px;
+            }
+
+            .receta-1 {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .receta-2 {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    font-size: 30px;
+                }
+
+                img {
+                    object-fit: contain;
+                }
+
+                ul {
+                    li {
+                        font-size: 14px;
+                        margin: 5px;
+                    }
+                }
+
+                ol {
+                    li {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .titulo-postre {
+                font-size: 30px;
+                margin: 10px;
+            }
+
+            .postre-1 {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                img {
+                    object-fit: contain;
+                }
+
+                h3 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                h4 {
+                    font-size: 24px;
+                }
+
+                ol {
+                    li {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .postre-2 {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    font-size: 24px;
+                    margin-top: 20px;
+                }
+
+                img {
+                    object-fit: contain;
+                    margin-top: 0;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                ol {
+                    li {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .postre-3 {
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    object-fit: contain;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                ol {
+                    li {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 530px) {
+    .promocion {
         width: 350px;
         height: 200px;
     }
 }
 
 @media screen and (max-width:494px) {
-    .hero{
-        a{
-        font-size: 13px;
+    .hero {
+        a {
+            font-size: 13px;
         }
-        h1{
-        font-size: 17px;
+
+        h1 {
+            font-size: 17px;
         }
-        h2{
-        font-size: 15px;
-        margin: 10px;
+
+        h2 {
+            font-size: 15px;
+            margin: 10px;
         }
     }
-} 
+}
 
 @media screen and (max-width:435px) {
     .hero {
-        a{
+        a {
             font-size: 10px;
         }
     }
+
     .chat {
         display: none;
     }
-    
-    .opiniones{
-        div{
-            div{
-                img{
+
+    .opiniones {
+        div {
+            div {
+                img {
                     width: 300px;
                     padding: 10px;
                     justify-content: center;
@@ -306,12 +602,14 @@
             }
         }
     }
-    .contacto{
-        .comentario-contacto{
-            h1{
+
+    .contacto {
+        .comentario-contacto {
+            h1 {
                 font-size: 25px;
             }
-            h2{
+
+            h2 {
                 font-size: 25px;
             }
         }
@@ -319,9 +617,19 @@
 }
 
 @media screen and (max-width:419px) {
-    .hero{
-        h1{
+    .hero {
+        h1 {
             font-size: 15px;
+        }
+    }
+
+    .trabajo {
+        form {
+            div {
+                .archivo {
+                    width: 250px;
+                }
+            }
         }
     }
 }

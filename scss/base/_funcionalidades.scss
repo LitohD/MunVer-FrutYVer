@@ -5,14 +5,24 @@ $color-secundario: #7fa072;
 
 //EXTENDS
 
-%titulo-principal{
+%titulo-principal {
     text-align: center;
     color: $color-primario;
 }
 
+%centrado {
+    text-align: center;
+    margin: 10px;
+}
+
+%articulos {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
 //MIXIN
 
-@mixin flex($display, $justify, $aling){
+@mixin flex($display, $justify, $aling) {
     display: $display;
     justify-content: $justify;
     align-items: $aling;
