@@ -31,6 +31,30 @@
     }
 }
 
+@media screen and (max-width:1029px) {
+    .contenido {
+        .recetas {
+            .postre-2 {
+                ol {
+                    li {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .postre-3 {
+                ol {
+                    li {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
 @media screen and (max-width:989px) {
     .hero {
         a {
@@ -145,7 +169,7 @@
 
                 ol {
                     li {
-                        font-size: 10px;
+                        font-size: 11px;
                     }
                 }
             }
@@ -155,11 +179,6 @@
                     font-size: 18px;
                 }
 
-                ol {
-                    li {
-                        font-size: 11px;
-                    }
-                }
             }
         }
 
@@ -195,7 +214,7 @@
 
                 ol {
                     li {
-                        font-size: 10px;
+                        font-size: 11px;
                     }
                 }
             }
@@ -224,6 +243,34 @@
     .presentacion {
         display: none;
     }
+
+    .contenido {
+        .recetas {
+            .postre-1 {
+                ol {
+                    li {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .postre-2 {
+                ol {
+                    li {
+                        font-size: 11px;
+                    }
+                }
+            }
+
+            .postre-3 {
+                ol {
+                    li {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 830px) {
@@ -231,7 +278,7 @@
         .recetas {
             .receta-2 {
                 h2 {
-                    font-size: 16px;
+                    font-size: 20px;
                 }
 
                 ul {
@@ -257,6 +304,47 @@
     }
 }
 
+@media screen and(max-width:791px) {
+    .contenido {
+        .recetas {
+            .receta-2 {
+                h2 {
+                    font-size: 18px;
+                }
+            }
+
+            .postre-2 {
+                ol {
+                    li {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:760px) {
+    .contenido {
+        .recetas {
+            .postre-1 {
+                ol {
+                    li {
+                        font-size: 9px;
+                    }
+                }
+            }
+
+            .postre-3 {
+                ol {
+                    li {
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media screen and (max-width:754px) {
     .grid-redes {
@@ -279,6 +367,30 @@
 
         .noticias {
             display: none;
+        }
+    }
+
+    .contenido {
+        .recetas {
+            .postre-1 {
+                ol {
+                    li {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .postre-3 {
+                h2 {
+                    font-size: 24px;
+                }
+
+                ol {
+                    li {
+                        font-size: 10px;
+                    }
+                }
+            }
         }
     }
 }

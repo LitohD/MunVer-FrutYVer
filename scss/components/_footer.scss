@@ -1,4 +1,4 @@
-.grid-footer{
+.grid-footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
@@ -6,31 +6,34 @@
     padding: 20px;
 }
 
-.grid-mapa{
+.grid-mapa {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    h3{
+
+    h3 {
         width: 50%;
         margin: 10px;
     }
 }
 
-.grid-redes{
-    h3{
+.grid-redes {
+    h3 {
         align-items: center;
         margin: 10px;
     }
-    img{
+
+    img {
         padding: 10px;
     }
 }
 
-.grid-correo{
+.grid-correo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    h3{
+
+    h3 {
         width: 80%;
         margin: 10px;
     }

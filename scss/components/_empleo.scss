@@ -1,43 +1,51 @@
-.trabajo{
-    background: rgb(145,236,160);
-    background: linear-gradient(70deg, rgba(145,236,160,1) 43%, rgba(134,21,21,0.592874649859944) 100%);
+.trabajo {
+    background: rgb(145, 236, 160);
+    background: linear-gradient(70deg, rgba(145, 236, 160, 1) 43%, rgba(134, 21, 21, 0.592874649859944) 100%);
     padding: 20px;
     border-radius: 20px;
     width: 80%;
     margin: auto;
-    h1{
+
+    h1 {
         font-size: 40px;
         margin: 20px;
         @extend %titulo-principal
     }
-    p{
+
+    p {
         font-size: 20px;
         margin: 20px;
         text-align: center;
     }
-    h2{
+
+    h2 {
         font-size: 30px;
         @extend %titulo-principal;
         margin: 20px;
     }
-    form{
-        div{
+
+    form {
+        div {
             margin: 10px;
-            label{
+
+            label {
                 font-weight: bold;
                 margin: 10px;
             }
-            .bloques{
+
+            .bloques {
                 width: 100%;
                 padding: 10px;
                 border: 1px solid #d1d1d1;
                 border-radius: 5px;
                 margin: 5px;
             }
-            .check{
+
+            .check {
                 margin-right: 10px;
             }
-            textarea{
+
+            textarea {
                 width: 100%;
                 padding: 10px;
                 border: 1px solid #d1d1d1;
@@ -45,7 +53,8 @@
                 margin-bottom: 10px;
             }
         }
-        .boton{
+
+        .boton {
             background-color: #000000;
             color: white;
             border: none;
@@ -55,7 +64,8 @@
             margin: 5px;
             transition-property: background-color;
             transition-duration: 1s;
-            &:hover{
+
+            &:hover {
                 background-color: $color-primario;
             }
         }

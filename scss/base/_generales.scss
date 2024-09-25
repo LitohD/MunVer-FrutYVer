@@ -12,28 +12,29 @@ body {
     font-family: "Montserrat", sans-serif !important;
 }
 
-header{
-    nav{
-        div{
-            div{
-                a{
-                    img{
+header {
+    nav {
+        div {
+            div {
+                a {
+                    img {
                         width: 70px;
                         margin: 5px;
                     }
                 }
-                img{
+
+                img {
                     width: 55px;
                     margin: 10px;
                 }
-                
+
             }
         }
     }
 
 }
 
-.menu-bg{
+.menu-bg {
     background-color: $color-secundario;
 }
 
